@@ -1,6 +1,7 @@
 import style from './CommingSoon.module.css'
 import CountDown from './CountDown'
 import Progress from './Progress'
+import Notify from './Notify'
 
 const ComingSoon = () => {
   return (
@@ -10,6 +11,8 @@ const ComingSoon = () => {
       </p>
       <CountDown estimatedDate="2024-12-27"/>
       <Progress value={32}/>
+      <Notify/>
+      <button className={style.btn}>More Info</button>
     </div>
   )
 }

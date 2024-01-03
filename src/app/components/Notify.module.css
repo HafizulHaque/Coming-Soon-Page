@@ -1,0 +1,24 @@
+.container {
+  margin: 1em 0;
+}
+
+.parent {
+  display: flex;
+  border: 1px solid red;
+
+}
+
+.input {
+  padding: .4em;
+  flex: 1 1 80%;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.btn {
+  padding: .4em;
+}
+
+.msg {
+
+}

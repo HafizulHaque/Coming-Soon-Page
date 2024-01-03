@@ -2,12 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: .5em;
+  margin: 1em 0;
   border: 1px solid green;
 }
 
 .item {
   display: flex;
+  flex-basis: min(90px, 20%);
+  padding: .5em;
+  margin: 0 .5em;
   flex-direction: column;
   align-items: center;
   border: 1px solid gray;
+}
+
+.item span:first-child {
+  font-size: 1.4em;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: .2em;
 }
