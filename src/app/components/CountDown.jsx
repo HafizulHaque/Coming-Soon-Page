@@ -1,8 +1,12 @@
 'use client'
 
+import localFont from 'next/font/local'
 import { useEffect, useState } from 'react'
 import style from './CountDown.module.css'
 import moment from 'moment-timezone'
+ 
+// Font files can be colocated inside of `pages`
+const myFont = localFont({ src: '../../../public/fonts/digital-7.ttf' })
 
 const CountDown = ({estimatedDate = '2024-01-24'}) => {
 
@@ -33,7 +37,7 @@ const CountDown = ({estimatedDate = '2024-01-24'}) => {
   
 
   return (
-    <div className={style.container}>
+    <div className={`${style.container} ${myFont.className}`}>
       <div className={style.item}><span>{formatTime(86400, 1)}</span><span>Days</span></div>
       <div className={style.item}><span>{formatTime(3600, 60)}</span><span>Hours</span></div>
       <div className={style.item}><span>{formatTime(60, 60)}</span><span>Minutes</span></div>

@@ -4,7 +4,7 @@
   align-items: center;
   padding: .5em;
   margin: 1em 0;
-  border: 1px solid green;
+  letter-spacing: .2em;
 }
 
 .item {
@@ -13,13 +13,21 @@
   padding: .5em;
   margin: 0 .5em;
   flex-direction: column;
-  align-items: center;
-  border: 1px solid gray;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
 }
 
 .item span:first-child {
-  font-size: 1.4em;
-  font-weight: 500;
+  font-size: 4em;
+  font-weight: 700;
   display: inline-block;
   margin-bottom: .2em;
+  padding: .3em .2em;
+  border-radius: 5%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.10) 100%);
+}
+
+.item span:nth-child(2){
+  text-transform: uppercase;
 }
