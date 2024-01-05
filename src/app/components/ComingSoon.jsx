@@ -11,7 +11,7 @@ const ComingSoon = () => {
       {/* <p className={style.subText}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati quaerat hic dolorem aut nesciunt, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur obcaecati..
       </p> */}
       <CountDown estimatedDate="2024-12-27"/>
-      <Progress value={32}/>
+      <Progress value={70}/>
       <Notify/>
       <button className={style.btn}>More Info</button>
     </div>
