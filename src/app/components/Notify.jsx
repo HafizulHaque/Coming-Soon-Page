@@ -14,8 +14,15 @@ const Notify = () => {
   return (
     <div className={style.container}>
       <div className={style.parent}>
-        <input className={style.input} type="email" value={email} onChange={e => setEmail(e.target.value)}/>
-        <button className={style.btn} onClick={handleSubmit}>NOTIFY ME</button>
+        <input 
+          className={style.input} 
+          type="email" 
+          placeholder='Enter your email address'
+          value={email} 
+          onChange={e => setEmail(e.target.value)}/>
+        <button 
+          className={style.btn} 
+          onClick={handleSubmit}>NOTIFY ME</button>
       </div>
       <p className={style.msg}></p>
     </div>

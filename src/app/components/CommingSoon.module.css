@@ -19,4 +19,7 @@
 
 .btn {
   padding: .4em .8em;
+  background-color: rgba(255, 255, 255, .1);
+  outline: none;
+  border: 0;
 }
