@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import style from './Notify.module.css'
 
 const Notify = () => {
 
@@ -12,19 +11,18 @@ const Notify = () => {
   }
 
   return (
-    <div className={style.container}>
-      <div className={style.parent}>
-        <input 
-          className={style.input} 
+    <div>
+      <div>
+        <input
           type="email" 
           placeholder='Enter your email address'
           value={email} 
           onChange={e => setEmail(e.target.value)}/>
         <button 
-          className={style.btn} 
+          className='bg-slate-500'
           onClick={handleSubmit}>NOTIFY ME</button>
       </div>
-      <p className={style.msg}></p>
+      <p></p>
     </div>
   )
 }
