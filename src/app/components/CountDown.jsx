@@ -6,11 +6,13 @@ import Countdown, { zeroPad } from 'react-countdown'
 // Font files can be colocated inside of `pages`
 const myFont = localFont({ src: '../../../public/fonts/digital-7.ttf' })
 
+import { deployDay, deployMonth, deployYear } from '../../../config'
+
 const CountDown = () => {
 
   return (
     <Countdown 
-      date={new Date(2024, 2, 23)} 
+      date={new Date(deployYear, deployMonth-1, deployDay)} 
       renderer={({ days, hours, minutes, seconds }) => {
         return (
           <div className={`${myFont.className} flex justify-center gap-6 md:gap-8 mb-12 h-full`}>

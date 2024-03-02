@@ -2,8 +2,22 @@
 
 2. Requirement: Node.js version 18.17.0 or above
 
-3. Upload to any server:
+3. Update estamated day when actual website goes live
+ 
+  - open config.js file
+  - update deployDay, deployMonth, deployYear value
 
-- Build project: npm run Build
+3. Upload to any server that has node installed:
 
-- start command: npm run
+  - Build project: npm run Build
+
+  - start command: npm run start
+
+4. Important to note that provide ENVIRONMENT VARIABLE for Mailchimp api url as specified below:
+  - NEXT_PUBLIC_MAILCHIMP_API_URL=https://gmail.us18.list-manage.com/subscribe/post?u=<user_id>&amp;id=<id>&amp;f_id=<f_id>
+
+  put your own url in place of <user_id>, <id>, <f_id>
+
+
+That's all! Thank you.
+Feel free to message me for any support!
