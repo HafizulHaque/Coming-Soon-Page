@@ -36,11 +36,36 @@ const CountDown = ({estimatedDate = '2024-01-24'}) => {
   
 
   return (
-    <div className={myFont.className}>
-      <div><span>{formatTime(86400, 1)}</span><span>Days</span></div>
-      <div><span>{formatTime(3600, 60)}</span><span>Hours</span></div>
-      <div><span>{formatTime(60, 60)}</span><span>Minutes</span></div>
-      <div><span>{formatTime(1, 60)}</span><span>Seconds</span></div>
+    <div className={`${myFont.className} flex justify-center gap-8 mb-12`}>
+
+      <div className='flex flex-col items-center'>
+        <span className='text-8xl p-2 bg-gradient-to-b from-white/30 via-white/20 to-white/5 rounded-md'>
+          {formatTime(86400, 1)}
+        </span>
+        <span className='text-xl tracking-widest'>Days</span>
+      </div>
+
+      <div className='flex flex-col items-center'>
+        <span className='text-8xl p-2 bg-gradient-to-b from-white/30 via-white/20 to-white/5 rounded-md'>
+          {formatTime(3600, 60)}
+        </span>
+        <span className='text-xl tracking-widest'>Hours</span>
+      </div>
+
+      <div className='flex flex-col items-center'>
+        <span className='text-8xl p-2 bg-gradient-to-b from-white/30 via-white/20 to-white/5 rounded-md'>
+          {formatTime(60, 60)}
+        </span>
+        <span className='text-xl tracking-widest'>Minutes</span>
+      </div>
+
+      <div className='flex flex-col items-center'>
+        <span className='text-8xl p-2 bg-gradient-to-b from-white/30 via-white/20 to-white/5 rounded-md'>
+          {formatTime(1, 60)}
+        </span>
+        <span className='text-xl tracking-widest'>Seconds</span>
+      </div>
+
     </div>
   )
 }
