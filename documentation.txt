@@ -1,0 +1,9 @@
+1. This is a next.js project
+
+2. Requirement: Node.js version 18.17.0 or above
+
+3. Upload to any server:
+
+- Build project: npm run Build
+
+- start command: npm run
